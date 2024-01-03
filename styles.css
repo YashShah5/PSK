@@ -8,7 +8,7 @@
   body {
     height: 100vh;
     background-color: #000;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/48/Omega_Deuteron_of_Phi_Sigma_Kappa%2C_at_USC%2C_2013.jpg');
+    background-image: url('IMG_3.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -24,7 +24,7 @@ a{
 } 
 
 a:hover{ 
-    color: orange;
+    color: rgb(255, 57, 57);
 }
 
 header{
@@ -60,7 +60,7 @@ header{
     display: none; 
 }
 .action_btn{
-    background-color: rgb(255, 81, 0);
+    background-color: rgba(255, 125, 125, 0.344);
     color: #fff;
     padding: 0.5rem 1rem; 
     border: none; 
@@ -88,7 +88,7 @@ header{
     right: 2rem; 
     top: 60px;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(238, 11, 11, 0.856);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;

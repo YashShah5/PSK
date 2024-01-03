@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--TO ANYONE WHO sees this: Do not touch this stuff its just basic html layout. If you want to change stuff Ill mark it accordingly.-->
+    <meta name="viewport" content="with=device-width, inital-scale=1.0">
+
+    <!-- Tab bar name & linking style sheet-->
+<title>Phi Sigma Kappa | ΦΣK</title>
+
+<link rel="stylesheet" href="style.css" />
+<!--THIS IS THE GOOGLE FONTS LINK CHANGE IT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<body>
+<section class="header">
+    <nav>
+        <a href="indexs.html"><img src="psk.png"></a>
+        <div class="nav-links" id="navLinks" >
+            <!--for the close image-->
+            <i onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="gallery">Gallery</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </div>
+    <!--for the open image-->
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+<div class="text-box">
+    <!--Might remove text if I cant make it look nice with the Website-->
+
+<h1>  </h1>
+<p></p>
+    <!--button to get started underneath text-->
+    <a href="" class="hero-btn">GET STARTED</a>
+
+
+
+</div>
+</section>
+
+<!-- BSC ON THE SECOND PAGE-->
+<section class="course">
+    <h1>By These Things We Stand</h1>
+    <div class="row">
+        <div class="course-col">
+            <h3>To Promote Brotherhood</h3>
+            <p> Justice, harmony, and brotherly love are essential to the spirit of fraternity. 
+                We promise to set an example of true brotherhood not only in our relations with each other, 
+                but in our association with people everywhere.
+            </p>
+        </div>
+
+        <div class="course-col">
+            <h3>To Stimulate Scholarship</h3>
+            <p>Wisdom comes with learning. Complementing the mission of higher education, 
+                we seek to help our members to combine formal and informal learning experience; 
+                to more fully appreciate the importance of both theoretical and practical knowledge; 
+                and, by broadening their understanding of human relationships, to produce men of wisdom 
+                who will be better prepared to make positive contributions to society and all mankind.
+            </p>
+        </div>
+
+        <div class="course-col">
+            <h3>To Develop Character</h3>
+            <p>Honor is the basis of fraternal relationships. 
+                We resolve to instill in each member a devotion 
+                to those values which will guide him to ends that 
+                are noble and right, so that in all that he represents
+                and in all that he does, he shall be known as a man of 
+                honor who inspires others by his example and thus wins 
+                admiration and respect for himself and for Phi Sigma Kappa.
+            </p>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!--
+ANOTHER SECTION
+-->
+
+<section class="campus">
+
+
+</section>
+
+
+    <!--JAVASCRIPT open and close menu -->
+
+<script>
+/*
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+
+    }
+*/
+
+// JavaScript to open and close menu
+var navLinks = document.getElementById("navLinks");
+var openNavIcon = document.querySelector(".fa-bars");
+
+// Function to show the menu
+function showMenu(){
+    navLinks.style.right = "0";
+}
+
+// Function to hide the menu
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+// Event listener for opening the menu
+openNavIcon.addEventListener("click", showMenu);
+
+// Event listener to close the menu when clicking outside of it
+document.addEventListener("click", function(event) {
+    // Check if the clicked area is outside the navLinks and not the openNavIcon
+    var isClickInsideNav = navLinks.contains(event.target);
+    var isClickOnOpenIcon = openNavIcon.contains(event.target);
+
+    if (!isClickInsideNav && !isClickOnOpenIcon) {
+        hideMenu();
+    }
+});
+
+// Prevent the event listener on the document from closing the menu when it opens
+navLinks.addEventListener("click", function(event) {
+    event.stopPropagation();
+});
+
+    
+
+</script>
+
+
+
+</body>
+</html>
