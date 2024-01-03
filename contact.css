@@ -6,6 +6,20 @@
 
 }
 
+
+.header{
+    height: 50vh;
+    width: 100%;
+    /*BCKG image gradient and file path do not change unless you want to change the background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.312),rgba(8, 0, 0, 0.229)), url(IMG_3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
 /* for nav bar on top spacing*/
 nav{
     display: flex;
@@ -99,15 +113,4 @@ nav .fa{
         padding: 10px;
         
     }
-}
-
-
-.sub-header{
-        height: 50vh;
-        width: 100%;
-        /*BCKG image gradient and file path do not change unless you want to change the background image */
-        background-image: linear-gradient(rgb(0, 0, 0),rgb(8, 0, 0)), url(IMG_3.jpg);
-        background-position: center;
-        background-size: cover;
-        text-align: center;
 }

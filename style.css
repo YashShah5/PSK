@@ -166,7 +166,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background-image: linear-gradient(rgba(4, 0, 0, 0.922),rgba(0, 0, 0, 0.587)), url(IMG_41.jpg);
+    background-image: linear-gradient(rgba(4, 0, 0, 0.922),rgba(0, 0, 0, 0.517)), url(IMG_41.jpg);
     box-sizing: border-box; /* This ensures that padding and borders are included in the total width and height */
     position: relative;
     height: 100vh;
@@ -235,6 +235,15 @@ h3{
     box-shadow: 0 0 30px 0px rgba(223, 180, 169, 0.975);
 }
 
+/*creating a clur effect on the cards of the website (course cols)*/
+.row:hover > .course-col:not(:hover){
+    filter: blur(5px);
+    transform: scale(0.95);
+
+
+}
+
+
 @media(max-width: 800px){
     .row{
         flex-direction: column;
@@ -249,3 +258,157 @@ h3{
 
 }
 
+
+
+
+
+
+/*
+FOOTER
+*/
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use viewport height (vh) instead of percentage (100%) */
+
+}
+
+footer * {
+    box-sizing: border-box;
+    padding: 1000;
+    margin: 0;
+}
+
+
+footer a{ 
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+footer ul{
+    list-style: none;
+}
+
+footer{
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Stretch across the full width */
+    color: #fff;
+    background: #000000bf;
+    text-align: center;
+
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .container{
+    max-width: 1200px;
+    margin: 100 auto;
+    padding: .3em;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+
+}
+
+.footer .brand{
+    margin: 0;
+    font-family: cursive;
+
+}
+
+.footer .menu li{
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+}
+
+.footer .menu a{
+    transition: 0.3s;
+    font-weight: 200;
+    color: #ccc;
+    font-size: .94em;
+    font-family: Optima;
+
+
+}
+
+.footer .menu a:hover{
+    color: #d71b1b;
+    text-decoration: none;
+}
+
+.brand{
+    display: block;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.media-icons li,
+.service-icons li{
+    display: inline-block;
+    margin: 0.5em;
+
+}
+
+.media-icons a {
+    font-size: .9em; /* This sets the size of the icon inside the circle */
+    width: 40px; /* Width of the circle */
+    height: 40px; /* Height of the circle, should be equal to width for a perfect circle */
+    line-height: 40px; /* Helps to vertically align the text/icon in the middle */
+    border: 1px solid #fff; /* The border of the circle */
+    border-radius: 50%; /* This makes the border a circle */
+    display: inline-flex; /* Use inline-flex to allow flexbox properties */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    transition: 0.3s; /* Smooth transition for hover effects */
+    text-align: center; /* Ensures that the text inside the anchor is centered */
+    color: #ffffff; /* Default color for icons */
+
+}
+
+.media-icons a:hover{
+    background: #d71b1b;
+    color: #ffffff;
+}
+
+service-icons a{
+    font-size: 1.6em;
+}
+
+service-icons a:hover{
+    color: #dbdbdb
+}
+
+@media screen and (max-width: 500px) {
+    .main-content {
+        padding-bottom: 100px; /* Adjust this value so that the footer does not overlap the content */
+
+        flex: 1; /* This will allow the content to expand and fill the available space */
+        /* Other styles as necessary */
+    }
+
+    footer {
+        position: relative; /* Not absolute */
+        bottom: 0;
+        /* ... other styles ... */
+    }
+}
