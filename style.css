@@ -166,7 +166,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background-image: linear-gradient(rgba(4, 0, 0, 0.643),rgba(0, 0, 0, 0.942)), url(IMG_3.jpg);
+    background-image: linear-gradient(rgba(4, 0, 0, 0.922),rgba(0, 0, 0, 0.587)), url(IMG_41.jpg);
     box-sizing: border-box; /* This ensures that padding and borders are included in the total width and height */
     position: relative;
     height: 100vh;
