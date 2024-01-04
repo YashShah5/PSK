@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -244,10 +246,10 @@ h3{
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 900px){
     .row{
         flex-direction: column;
-        background-color: #000000fd;
+        background-color: #000000;
     }
 
     .course-col {
@@ -259,156 +261,82 @@ h3{
 }
 
 
-
-
-
-
-/*
-FOOTER
-*/
+/* FOOTER  */
 
 body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #333;
+    margin:0;
+    overflow-x:hidden;
+    }
+    
+    .footer{
+        background-image: linear-gradient(rgba(4, 0, 0, 0.563),rgb(0, 0, 0)), url(footer.png);
+        padding:37px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
 
+    /*ALL RIGHTS RESERVED*/
+    .footer .row{
+    width:100%;
 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Use viewport height (vh) instead of percentage (100%) */
+    margin: 1% 0%;
+    padding:0.9% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    /*all other icons*/
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.3s;
+        bottom: 10px; /* Adjust distance from the bottom */
 
-}
-
-footer * {
-    box-sizing: border-box;
-    padding: 1000;
-    margin: 0;
-}
-
-
-footer a{ 
-    color: #fff;
-    text-decoration: none;
-}
-
-footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-footer ul{
-    list-style: none;
-}
-
-footer{
-    bottom: 0; /* Align to the bottom */
-    left: 0; /* Align to the left */
-    width: 100%; /* Stretch across the full width */
-    color: #fff;
-    background: #000000bf;
-    text-align: center;
-
-}
-
-footer a{
-    color: #fff;
-    text-decoration: none;
-}
-
-footer .container{
-    max-width: 1200px;
-    margin: 100 auto;
-    padding: .3em;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    gap: 2em;
-
-}
-
-.footer .brand{
-    margin: 0;
-    font-family: cursive;
-
-}
-
-.footer .menu li{
-    display: inline-block;
-    margin: 1em;
-    text-align: center;
-}
-
-.footer .menu a{
-    transition: 0.3s;
-    font-weight: 200;
-    color: #ccc;
-    font-size: .94em;
-    font-family: Optima;
-
-
-}
-
-.footer .menu a:hover{
-    color: #d71b1b;
-    text-decoration: none;
-}
-
-.brand{
-    display: block;
-    font-size: 1.3em;
-    font-weight: 400;
-    margin-bottom: 1em;
-}
-
-.media-icons li,
-.service-icons li{
-    display: inline-block;
-    margin: 0.5em;
-
-}
-
-.media-icons a {
-    font-size: .9em; /* This sets the size of the icon inside the circle */
-    width: 40px; /* Width of the circle */
-    height: 40px; /* Height of the circle, should be equal to width for a perfect circle */
-    line-height: 40px; /* Helps to vertically align the text/icon in the middle */
-    border: 1px solid #fff; /* The border of the circle */
-    border-radius: 50%; /* This makes the border a circle */
-    display: inline-flex; /* Use inline-flex to allow flexbox properties */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    transition: 0.3s; /* Smooth transition for hover effects */
-    text-align: center; /* Ensures that the text inside the anchor is centered */
-    color: #ffffff; /* Default color for icons */
-
-}
-
-.media-icons a:hover{
-    background: #d71b1b;
-    color: #ffffff;
-}
-
-service-icons a{
-    font-size: 1.6em;
-}
-
-service-icons a:hover{
-    color: #dbdbdb
-}
-
-@media screen and (max-width: 500px) {
-    .main-content {
-        padding-bottom: 100px; /* Adjust this value so that the footer does not overlap the content */
-
-        flex: 1; /* This will allow the content to expand and fill the available space */
-        /* Other styles as necessary */
+    }
+    
+    .footer .row a:hover{
+    color:#ff9797;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:center;
+    padding: 5%;
+    
     }
 
-    footer {
-        position: relative; /* Not absolute */
-        bottom: 0;
-        /* ... other styles ... */
+    .footer .row ul {
+        text-align: center;
+        padding: 0;
+        display:inline-block;
+
     }
-}
+    .footer .row ul li{
+    margin:10px 0px;
+    text-align:center;
+    display:inline-block;
+
+    }
+    .footer .row a i{
+        margin:10px 10px;
+        display:inline-block;
+
+    }
+    
+    }
