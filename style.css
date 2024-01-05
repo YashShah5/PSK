@@ -209,7 +209,7 @@ p{
 /*adding the coloums colors and spacing*/
 .course-col{
     flex-basis: 31%;
-    background: #202020cf;
+    background: #310a0acf;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -239,7 +239,7 @@ h3{
 
 /*creating a clur effect on the cards of the website (course cols)*/
 .row:hover > .course-col:not(:hover){
-    filter: blur(5px);
+    filter: blur(1px);
     transform: scale(0.95);
 
 

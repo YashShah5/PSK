@@ -12,9 +12,9 @@
 .header{
     width: 100%;
 /*BCKG image gradient and file path do not change unless you want to change the background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.745),rgba(8, 0, 0, 0.253)), url(IMG_3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.846),rgba(8, 0, 0, 0.896)), url(IMG_3.jpg);
     position: relative;
-    height: 30vh;
+    height: 20vh;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -128,7 +128,6 @@ h1{
 
 
 
-
 /*IMAGE GALLERY*/
 
   
@@ -179,23 +178,6 @@ h1{
     justify-content: space-between;
     padding: 3vh 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.399),rgb(8, 0, 0)), url(IMG_43.jpg);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }
   .gallery-wrapper .content .gallery.full {
     position: relative;
@@ -487,17 +469,6 @@ h1{
     }
   }
 
-
-
-
-
-
-
-
-
-
-  
-
 /* FOOTER  */
 
 body{
@@ -573,10 +544,8 @@ body{
     .footer .row a i{
         margin:10px 10px;
         display:inline-block;
-
     }
-    
-    }
+}
 
 
 
