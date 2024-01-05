@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - About Page - Investment Firm</title>
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="/css/about.css">
 
 <!--THIS IS THE GOOGLE FONTS LINK CHANGE IT-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,12 +26,12 @@
 
     <section class="header">
         <nav>
-            <a href="index.html"><img src="psk.png"></a>
+            <a href="home.html"><img src="/bkg/psk.png"></a>
             <div class="nav-links" id="navLinks" >
                 <!--for the close image-->
                 <i onclick="hideMenu()"></i>
                 <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="home.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="rush.html">Rush</a></li>
@@ -92,14 +92,9 @@
 <!-- partial -->
   
 
-
-
-
--- partial:index.partial.html -->
 <div class="ag-timeline-block">
   <div class="ag-timeline_title-box">
-    <div class="ag-timeline_tagline">Timeline</div>
-    <div class="ag-timeline_title">No Flex</div>
+    <div class="ag-timeline_tagline">Our History</div>
   </div>
   <section class="ag-section">
     <div class="ag-format-container">
@@ -111,16 +106,16 @@
           <div class="js-timeline_item ag-timeline_item">
             <div class="ag-timeline-card_box">
               <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-                <div class="ag-timeline-card_point">2021</div>
+                <div class="ag-timeline-card_point">1873</div>
               </div>
               <div class="ag-timeline-card_meta-box">
-                <div class="ag-timeline-card_meta">Season 13</div>
+                <div class="ag-timeline-card_meta">Humble Beginnings</div>
               </div>
             </div>
             <div class="ag-timeline-card_item">
               <div class="ag-timeline-card_inner">
                 <div class="ag-timeline-card_img-box">
-                  <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png" class="ag-timeline-card_img" width="640" height="360" />
+                  <img src="/timeline/psk1.jpeg" class="ag-timeline-card_img" width="640" height="360" />
                 </div>
                 <div class="ag-timeline-card_info">
                   <div class="ag-timeline-card_title">Season 13</div>
@@ -499,12 +494,90 @@
   </section>
 </div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script><script  src="about.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script><script  src="/jvs/about.js"></script>
 
 
 
+        <!--FOOTER -->
 
-
-
-</body>
-</html>
+      </head>
+      <body>
+          <footer>
+              <div class="footer">
+      
+              
+              <div class="row">
+              <ul>
+                  <a href="https://www.instagram.com/ruphisigmakappa/" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/@USCPhiSigmaKappa" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                  <a href="mailto:ruphisigmakappa@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                  <a href="sms:7325168817&body= Hi I am looking to Rush PSK this semester how can I get started." target="_blank"><i class="fa fa-commenting"></i></a>
+              </ul>
+              </div>
+              
+              <div class="row">
+              Phi Sigma Kappa Copyright © 2024 | All rights reserved | Designed by Yash S. Shah
+              </div>
+              </div>
+              </footer>
+      
+              <!--FOOTER -->
+      
+      
+      
+      
+      
+      
+      
+      <!--JAVASCRIPT open and close menu -->
+      
+      <script>
+      /*
+          var navLinks = document.getElementById("navLinks");
+          function showMenu(){
+              navLinks.style.right = "0";
+          }
+          
+          function hideMenu(){
+              navLinks.style.right = "-200px";
+      
+          }
+      */
+      
+      // JavaScript to open and close menu
+      var navLinks = document.getElementById("navLinks");
+      var openNavIcon = document.querySelector(".fa-bars");
+      
+      // Function to show the menu
+      function showMenu(){
+          navLinks.style.right = "0";
+      }
+      
+      // Function to hide the menu
+      function hideMenu(){
+          navLinks.style.right = "-200px";
+      }
+      
+      // Event listener for opening the menu
+      openNavIcon.addEventListener("click", showMenu);
+      
+      // Event listener to close the menu when clicking outside of it
+      document.addEventListener("click", function(event) {
+          // Check if the clicked area is outside the navLinks and not the openNavIcon
+          var isClickInsideNav = navLinks.contains(event.target);
+          var isClickOnOpenIcon = openNavIcon.contains(event.target);
+      
+          if (!isClickInsideNav && !isClickOnOpenIcon) {
+              hideMenu();
+          }
+      });
+      
+      // Prevent the event listener on the document from closing the menu when it opens
+      navLinks.addEventListener("click", function(event) {
+          event.stopPropagation();
+      });
+      
+      
+      </script>
+      </body>
+      </html>

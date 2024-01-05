@@ -7,12 +7,13 @@
     /* GOOGLE FONT*/
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
+
 }
 
 .header{
     width: 100%;
 /*BCKG image gradient and file path do not change unless you want to change the background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.855),rgb(8, 0, 0)), url(IMG_3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.855),rgb(8, 0, 0)), url(/bkg/IMG_3.jpg);
     position: relative;
     height: 30vh;
     background-size: cover;
@@ -194,7 +195,7 @@ ul {
 
 body {
   font: 18px/1.5 "Open Sans", sans-serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.82),rgba(0, 0, 0, 0.667)), url(footer.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.82),rgba(0, 0, 0, 0.667)), url(/bkg/footer.png);
   color: var(--white);
   margin: 1.5rem 0;
 }
@@ -440,7 +441,7 @@ body{
     }
     
     .footer{
-        background-image: linear-gradient(rgba(4, 0, 0, 0.935),rgb(0, 0, 0)), url(footer.png);
+        background-image: linear-gradient(rgba(4, 0, 0, 0.935),rgb(0, 0, 0)), url(/bkg/footer.png);
         padding:37px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;

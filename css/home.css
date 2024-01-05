@@ -12,7 +12,7 @@
 .header{
     width: 100%;
 /*BCKG image gradient and file path do not change unless you want to change the background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(8, 0, 0, 0.253)), url(IMG_3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(8, 0, 0, 0.253)), url(/bkg/IMG_3.jpg);
     position: relative;
     height: 100vh;
     background-size: cover;
@@ -168,7 +168,7 @@ nav .fa{
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background-image: linear-gradient(rgba(4, 0, 0, 0.922),rgba(0, 0, 0, 0.517)), url(IMG_41.jpg);
+    background-image: linear-gradient(rgba(4, 0, 0, 0.922),rgba(0, 0, 0, 0.517)), url(/bkg/footer.png);
     box-sizing: border-box; /* This ensures that padding and borders are included in the total width and height */
     position: relative;
     height: 100vh;
@@ -185,6 +185,8 @@ h1{
     font-size: 56px;
     font-weight: 600;
     color: #ffffff;
+    font-family: cursive;
+
 }
 
 p{
@@ -193,6 +195,8 @@ p{
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
     
     
 
@@ -209,14 +213,13 @@ p{
 /*adding the coloums colors and spacing*/
 .course-col{
     flex-basis: 31%;
-    background: #310a0acf;
-    border-radius: 10px;
+    background: #56565640;
+    border-radius: 20px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.3s;
     
-
     flex-basis: calc(33.333% - 40px); /* Adjust the 40px to account for the desired spacing */
     margin: 20px; /* This will be the space around each block */
     /* Other styles remain the same */
@@ -230,16 +233,17 @@ h3{
     font-weight: 750;
     margin: 10px 0;
     color: #ffffff;
+    font-family: cursive;
 
 }
 
 .course-col:hover{
-    box-shadow: 0 0 30px 0px rgba(223, 180, 169, 0.975);
+    box-shadow: 0 0 50px 0px #ffb300;
 }
 
 /*creating a clur effect on the cards of the website (course cols)*/
 .row:hover > .course-col:not(:hover){
-    filter: blur(1px);
+    filter: blur(3px);
     transform: scale(0.95);
 
 
@@ -269,7 +273,7 @@ body{
     }
     
     .footer{
-        background-image: linear-gradient(rgba(4, 0, 0, 0.563),rgb(0, 0, 0)), url(footer.png);
+        background-image: linear-gradient(rgba(4, 0, 0, 0.563),rgb(0, 0, 0)), url(/bkg/footer.png);
         padding:37px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;

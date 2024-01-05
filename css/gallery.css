@@ -12,9 +12,9 @@
 .header{
     width: 100%;
 /*BCKG image gradient and file path do not change unless you want to change the background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.846),rgba(8, 0, 0, 0.896)), url(IMG_3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.846),rgba(8, 0, 0, 0.896)), url(/bkg/footer.png);
     position: relative;
-    height: 20vh;
+    height: 14vh;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -177,7 +177,7 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     padding: 3vh 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.399),rgb(8, 0, 0)), url(IMG_43.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.399),rgb(8, 0, 0)), url(/bkg/IMG_43.jpg);
   }
   .gallery-wrapper .content .gallery.full {
     position: relative;
@@ -477,7 +477,7 @@ body{
     }
     
     .footer{
-        background-image: linear-gradient(rgba(4, 0, 0, 0.935),rgb(0, 0, 0)), url(footer.png);
+        background-image: linear-gradient(rgba(4, 0, 0, 0.935),rgb(0, 0, 0)), url(/bkg/footer.png);
         padding:37px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
