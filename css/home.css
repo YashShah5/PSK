@@ -171,11 +171,8 @@ nav .fa{
     background-image: linear-gradient(rgba(4, 0, 0, 0.922),rgba(0, 0, 0, 0.517)), url(/bkg/footer.png);
     box-sizing: border-box; /* This ensures that padding and borders are included in the total width and height */
     position: relative;
-    height: 100vh;
     background-size: cover;
     background-position: cover;
-
-
 }
 
 
@@ -284,7 +281,7 @@ body{
     .footer .row{
     width:100%;
 
-    margin: 1% 0%;
+    margin: .5% 0%;
     padding:0.9% 0%;
     color:gray;
     font-size:0.8em;
