@@ -273,7 +273,7 @@ body{
     }
     
     .footer{
-        background-image: linear-gradient(rgba(4, 0, 0, 0.563),rgb(0, 0, 0)), url(/bkg/footer.png);
+        background-image: linear-gradient(rgba(4, 0, 0, 0.935),rgb(0, 0, 0)), url(/bkg/footer.png);
         padding:37px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
