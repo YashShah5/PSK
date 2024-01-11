@@ -194,7 +194,7 @@ h1{
     font-size: 56px;
     font-weight: 600;
     color: #ffffff;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -344,13 +344,6 @@ body{
 
 
 
-
-
-
-
-
-
-
     /*======= Cards Css =======*/
 .card-container{
     display: flex;
@@ -361,97 +354,24 @@ body{
 
 .card{
     position: relative;
+    padding-bottom: 20%;
+    padding: right 100px; 
+
 }
-.card-content-one{
+.card-content{
     position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
+    background: #5c0c0c;
+    width: 560px;
+    height: 100%;
+    border-radius: 4px;
     overflow: hidden;
 }
-
-.card-content-two{
-    position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card-content-two{
-    position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-.card-content-two{
-    position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-.card-content-three{
-    position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-
-.card-content-four{
-    position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card-content-five{
-    position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card-content-six{
-    position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card-content-seven{
-    position: relative;
-    background: #bd5f5f;
-    width: 450px;
-    box-shadow: 0 5px 25px rgba(2, 2, 2, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
 
 .card-content .card-img{
     position: relative;
-    width: 450px;
-    height: auto;
-    display: flex;
+    width: 560px; /* or any desired width */
+    height: 470px; /* or any desired height */
+    object-fit: cover; 
     justify-content: center;
     align-items: center;
 }
@@ -470,13 +390,25 @@ body{
     font-size: 1em;
 }
 
+.card-content:hover{
+    box-shadow: 0 0 50px 0px #ffb300;
+}
 
+/*creating a clur effect on the cards of the website (course cols)*/
+.card-content > .card-content:not(:hover){
+    filter: blur(3px);
+    transform: scale(0.95);
+
+
+}
 
 
 /*======= Media queries (max-width: 490px) =======*/
-@media screen and (max-width: 490px) {
+@media(max-width: 490px) {
     .card-container{
         margin: 30px 25px;
+        flex-direction: column;
+
     }
 
     .card-content{

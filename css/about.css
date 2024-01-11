@@ -23,7 +23,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #dfdfdf;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.715),rgb(8, 0, 0)), url(/bkg/footer.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.849),rgba(0, 0, 0, 0.959)), url(/bkg/footer.png);
 }
 
 .container {
@@ -88,7 +88,13 @@ body {
   letter-spacing: -0.4px;
   line-height: 16rem;
   color: #fafafa;
+  
 }
+
+
+
+
+
 @media only screen and (max-width: 760px) {
   .page-title {
     margin-bottom: 6rem;
@@ -135,6 +141,8 @@ body {
 .content__title {
   font-size: 1.5rem;
   font-weight: 400;
+  font-size: 150px; /* Adjust the size as needed */
+  color: rgb(255, 115, 115);
 }
 .content__text-box {
   display: flex;
@@ -187,7 +195,7 @@ body {
 .header{
   width: 100%;
 /*BCKG image gradient and file path do not change unless you want to change the background image */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.595),rgb(8, 0, 0)), url(/bkg/footer.png);
+  background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)), url(/bkg/footer.png);
   position: relative;
   height: 10vh;
   background-size: cover;
@@ -206,7 +214,7 @@ nav{
 
 /* for lop left image */
 nav img{
-  width: 150px;
+  width: 130px;
 
 }
 
@@ -273,7 +281,7 @@ nav img{
 
 .text-box p{
   margin: 10px 0 40px;
-  font-size: 14px;
+  font-size: 18px;
   color: #fff;
 
 }
@@ -397,14 +405,14 @@ img {
 }
 .ag-timeline_title-box {
   padding: 0 0 30px;
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
 
   text-align: center;
 }
 .ag-timeline_tagline {
   font-size: 40px;
   color: rgb(255, 255, 255);
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 300;
 
 
@@ -704,7 +712,7 @@ body{
     }
     
     .footer{
-        background-image: linear-gradient(rgba(4, 0, 0, 0.935),rgb(0, 0, 0)), url(/bkg/footer.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.935),rgb(0, 0, 0)), url(/bkg/footer.png);
         padding:37px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
