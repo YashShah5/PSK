@@ -8,6 +8,7 @@
 <title>Phi Sigma Kappa | ΦΣK</title>
 
 <link rel="stylesheet" href="/css/home.css" />
+
 <!--THIS IS THE GOOGLE FONTS LINK CHANGE IT-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,23 +28,35 @@
 
 </head>
 <body>
-<section class="header">
-    <nav>
-        <a href="home.html"><img src="/bkg/psk.png"></a>
-        <div class="nav-links" id="navLinks" >
-            <!--for the close image-->
-            <i onclick="hideMenu()"></i>
-            <ul>
+    <section class="header">
+
+<body>
+    <header>
+        <nav>
+        <a href="home.html"><img src="/bkg/psk.png"></a>    
+      <div class="header-container">
+        <nav id="nav">
+          <ul id="nav-ul">
             <li><a href="home.html">HOME</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="rush.html">Rush</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-    <!--for the open image-->
-    <i class="fa fa-bars" onclick="showMenu()"></i>
-</nav>
+          </ul>
+        </nav>
+        <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+      </div>
+    </nav>
+    </header>
+  </body>
+
+
+
+
+
+
+
+
 
 <div class="text-box">
 
@@ -57,9 +70,24 @@
 </div>
 </section>
 
+
+<script>
+
+    const btn = document.getElementById('button');
+     const nav = document.getElementById('navLinks');
+     
+     btn.addEventListener('click', function() {
+       nav.classList.toggle ('toggle');
+     });
+   </script>
+
+
+
+
 <!-- BSC ON THE SECOND PAGE-->
 <section class="course">
     <h1>By These Things We Stand</h1>
+
 
     <div class="row">
         <div class="course-col">
@@ -109,6 +137,7 @@
             <a href="https://www.facebook.com/Phisigmakappa/" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://www.youtube.com/@USCPhiSigmaKappa" target="_blank"><i class="fa fa-youtube-play"></i></a>
             <a href="mailto:ruphisigmakappa@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="sms:7325168817&body= Hi I am looking to Rush PSK this semester how can I get started." target="_blank"><i class="fa fa-commenting"></i></a>
         </ul>
         </div>
         
@@ -122,44 +151,6 @@
 
     <!--JAVASCRIPT open and close menu -->
 
-<script>
-
-// JavaScript to open and close menu
-var navLinks = document.getElementById("navLinks");
-var openNavIcon = document.querySelector(".fa-bars");
-
-// Function to show the menu
-function showMenu(){
-    navLinks.style.right = "0";
-}
-
-// Function to hide the menu
-function hideMenu(){
-    navLinks.style.right = "-200px";
-}
-
-// Event listener for opening the menu
-openNavIcon.addEventListener("click", showMenu);
-
-// Event listener to close the menu when clicking outside of it
-document.addEventListener("click", function(event) {
-    // Check if the clicked area is outside the navLinks and not the openNavIcon
-    var isClickInsideNav = navLinks.contains(event.target);
-    var isClickOnOpenIcon = openNavIcon.contains(event.target);
-
-    if (!isClickInsideNav && !isClickOnOpenIcon) {
-        hideMenu();
-    }
-});
-
-// Prevent the event listener on the document from closing the menu when it opens
-navLinks.addEventListener("click", function(event) {
-    event.stopPropagation();
-});
-
-    
-
-</script>
 
 
 

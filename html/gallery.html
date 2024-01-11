@@ -221,8 +221,9 @@ var navLinks = document.getElementById("navLinks");
 var openNavIcon = document.querySelector(".fa-bars");
 
 // Function to show the menu
-function showMenu(){
+function showMenu(event){
     navLinks.style.right = "0";
+    event.stopPropagation(); // Prevent click from propagating to document
 }
 
 // Function to hide the menu
@@ -235,12 +236,13 @@ openNavIcon.addEventListener("click", showMenu);
 
 // Event listener to close the menu when clicking outside of it
 document.addEventListener("click", function(event) {
-    // Check if the clicked area is outside the navLinks and not the openNavIcon
-    var isClickInsideNav = navLinks.contains(event.target);
-    var isClickOnOpenIcon = openNavIcon.contains(event.target);
+    if (navLinks.style.right === "0") { // Check if menu is currently open
+        // Check if the clicked area is outside the navLinks
+        var isClickInsideNav = navLinks.contains(event.target);
 
-    if (!isClickInsideNav && !isClickOnOpenIcon) {
-        hideMenu();
+        if (!isClickInsideNav) {
+            hideMenu();
+        }
     }
 });
 
@@ -248,7 +250,6 @@ document.addEventListener("click", function(event) {
 navLinks.addEventListener("click", function(event) {
     event.stopPropagation();
 });
-
     
 
 </script>
