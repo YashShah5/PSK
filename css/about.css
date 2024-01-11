@@ -79,6 +79,8 @@ body {
   }
 }
 
+
+/*LOOPING JS TITLE */
 .page-title {
   margin-bottom: 8rem;
   font-family: "Anton", sans-serif;
@@ -88,10 +90,18 @@ body {
   letter-spacing: -0.4px;
   line-height: 16rem;
   color: #fafafa;
-  
 }
-
-
+/*LOOPING JS TITLE */
+.element{
+  margin-bottom: 8rem;
+  font-family: "Anton", sans-serif;
+  font-size: 16rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+  line-height: 16rem;
+  color: #c09d03;
+}
 
 
 
@@ -100,18 +110,38 @@ body {
     margin-bottom: 6rem;
     font-size: 8rem;
   }
+
+  /*LOOPING JS TITLE */
+.element{
+  margin-bottom: 6rem;
+  font-size: 8rem;
+  color: #c09d03;
+}
 }
 @media only screen and (max-width: 580px) {
   .page-title {
     margin-bottom: 4rem;
-    font-size: 7rem;
+    font-size: 6rem;
   }
+  /*LOOPING JS TITLE */
+  .element{
+    margin-bottom: 4rem;
+    font-size: 6rem;
+    color: #c09d03;
+  }
+
 }
 @media only screen and (max-width: 370px) {
   .page-title {
     margin-bottom: 0;
-    font-size: 5rem;
+    font-size: 4em;
   }
+  .element{
+    margin-bottom: 0;
+    font-size: 4rem;
+    color: #c09d03;
+  }
+
 }
 
 .content {
@@ -138,11 +168,14 @@ body {
     border-top: none;
   }
 }
+
+/*THE tyext BELOW ABOUT US*/
 .content__title {
   font-size: 1.5rem;
-  font-weight: 400;
-  font-size: 150px; /* Adjust the size as needed */
-  color: rgb(255, 115, 115);
+  font-weight: 2;
+  font-size: 120px; /* Adjust the size as needed */
+  color: rgb(255, 52, 52);
+  font-family: "Anton", sans-serif;
 }
 .content__text-box {
   display: flex;
