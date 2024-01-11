@@ -12,9 +12,9 @@
 .header{
     width: 100%;
 /*BCKG image gradient and file path do not change unless you want to change the background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.938),rgb(0, 0, 0)), url(/bkg/IMG_3.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0)), url(/bkg/IMG_3.jpg);
     position: relative;
-    height: 100vh;
+    height: 8.8vh;
     background-size: cover;
     background-position: center;
 
@@ -82,7 +82,7 @@ nav img{
     color: #fff;
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 20%;
     /* spacing for text boxes and button alignment*/
     transform: translate(-50%,-50%);
     text-align: center;
@@ -187,24 +187,95 @@ nav .fa{
 
 }
 
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5rem;
+  }
+  @media only screen and (max-width: 1200px) {
+    .content {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+  }
+  .content__descriptor {
+    width: 14%;
+    border-top: 1px solid #7b7b7b;
+    padding-top: 2rem;
+  }
+  @media only screen and (max-width: 1200px) {
+    .content__descriptor {
+      width: 100%;
+      padding: 4rem 0;
+      border-top: none;
+    }
+  }
+  
+  /*THE tyext BELOW ABOUT US*/
+  .content__title {
+    font-size: 1.5rem;
+    font-weight: 2;
+    font-size: 20px; /* Adjust the size as needed */
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  .content__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    border-top: 1px solid #7b7b7b;
+    border-bottom: 1px solid #7b7b7b;
+    margin-right: 5rem;
+    padding: 4rem 0;
+  }
+  @media only screen and (max-width: 920px) {
+    .content__text-box {
+      margin-right: 0;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .content__text-box {
+      width: 100%;
+      padding: 2rem 0;
+    }
+  }
+  @media only screen and (max-width: 580px) {
+    .content__text-box {
+      border-bottom: none;
+    }
+  }
+  .content__text {
+    width: 320px;
+  }
+  @media only screen and (max-width: 580px) {
+    .content__text {
+      width: 100%;
+    }
+  }
+  
 
-
-
+/*SPRING 2024 RUSH EVENT SCHEDULE & INFORMATION*/
 h1{
     font-size: 56px;
     font-weight: 600;
     color: #ffffff;
-    font-family: 'Times New Roman', Times, serif;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p{
     color: #ffffff;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    font-family: 'Times New Roman', Times, serif;
 
     
     
@@ -247,19 +318,6 @@ h3{
 }
 
 
-@media(max-width: 900px){
-    .row{
-        flex-direction: column;
-        background-color: #000000;
-    }
-
-    .events-col {
-        padding: 20px 10px; /* Adjusted padding for top/bottom and left/right */
-
-    }
-
-
-}
 
 
 /* FOOTER  */
