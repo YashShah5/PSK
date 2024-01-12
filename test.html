@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title>Phi Sigma Kappa | ΦΣK</title>
   <link rel="stylesheet" href="/css/about.css">
 
@@ -418,52 +418,40 @@
       <!--JAVASCRIPT open and close menu -->
       
       <script>
-      /*
-          var navLinks = document.getElementById("navLinks");
-          function showMenu(){
-              navLinks.style.right = "0";
-          }
-          
-          function hideMenu(){
-              navLinks.style.right = "-200px";
-      
-          }
-      */
-      
-      // JavaScript to open and close menu
-      var navLinks = document.getElementById("navLinks");
-      var openNavIcon = document.querySelector(".fa-bars");
-      
-      // Function to show the menu
-      function showMenu(){
-          navLinks.style.right = "0";
-      }
-      
-      // Function to hide the menu
-      function hideMenu(){
-          navLinks.style.right = "-200px";
-      }
-      
-      // Event listener for opening the menu
-      openNavIcon.addEventListener("click", showMenu);
-      
-      // Event listener to close the menu when clicking outside of it
-      document.addEventListener("click", function(event) {
-          // Check if the clicked area is outside the navLinks and not the openNavIcon
-          var isClickInsideNav = navLinks.contains(event.target);
-          var isClickOnOpenIcon = openNavIcon.contains(event.target);
-      
-          if (!isClickInsideNav && !isClickOnOpenIcon) {
-              hideMenu();
-          }
-      });
-      
-      // Prevent the event listener on the document from closing the menu when it opens
-      navLinks.addEventListener("click", function(event) {
-          event.stopPropagation();
-      });
-      
-      
-      </script>
+        // JavaScript to open and close menu
+        var navLinks = document.getElementById("navLinks");
+        var openNavIcon = document.querySelector(".fa-bars");
+        
+        // Function to show the menu
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        // Function to hide the menu
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+        
+        // Event listener for opening the menu
+        openNavIcon.addEventListener("click", showMenu);
+        
+        // Event listener to close the menu when clicking outside of it
+        document.addEventListener("click", function(event) {
+            // Check if the clicked area is outside the navLinks and not the openNavIcon
+            var isClickInsideNav = navLinks.contains(event.target);
+            var isClickOnOpenIcon = openNavIcon.contains(event.target);
+        
+            if (!isClickInsideNav && !isClickOnOpenIcon) {
+                hideMenu();
+            }
+        });
+        
+        // Prevent the event listener on the document from closing the menu when it opens
+        navLinks.addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+        
+        
+        </script>
       </body>
       </html>
