@@ -50,15 +50,15 @@ nav img{
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-    
+
     
 }
 
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
-    
+    font-size: 14px;
+
 
 }
 /* AFTER AND HOVER Create the hover affect fo rhte nav bar*/
@@ -150,7 +150,7 @@ nav .fa{
       .nav-links ul li {
         display: block;
         margin-top: 6px;
-        transition: 0.4s;
+        transition: 0.01s;
       }
       .nav-links ul li::after {
         content: "";
@@ -159,7 +159,7 @@ nav .fa{
         background: #fff;
         display: block;
         margin: 5px auto;
-        transition: 0.4s;
+        transition: 0.01s;
       }
       .nav-links ul li:hover {
         font-weight: bold;
@@ -175,7 +175,7 @@ nav .fa{
         right:-200px;
         text-align: left;
         z-index: 2;
-        transition: 1s;
+        transition: .2s;
       }
       nav .fa {
         display: block;
@@ -191,6 +191,31 @@ nav .fa{
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 /*2nd page*/
 
 .events{
@@ -432,13 +457,13 @@ body{
 
 .card{
     position: relative;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
     padding: right 100px; 
 
 }
 .card-content{
     position: relative;
-    background: #5c0c0c;
+    background: linear-gradient(rgb(0, 0, 0),rgb(49, 49, 49));
     width: 560px;
     height: 100%;
     border-radius: 4px;
@@ -456,8 +481,8 @@ body{
 
 
 .card-content .card-img img{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 90%;
 
 
 }
@@ -482,7 +507,7 @@ body{
 
 
 /*======= Media queries (max-width: 490px) =======*/
-@media(max-width: 490px) {
+@media(max-width: 620px) {
     .card-container{
         margin: 30px 25px;
         flex-direction: column;
@@ -491,10 +516,15 @@ body{
 
     .card-content{
         width: 100%;
+        align-items: center;
+
     }
 
     .card-content .card-img{
         width: 100%;
+        align-items: center;
+
+        
     }
 
     .card-text p {
