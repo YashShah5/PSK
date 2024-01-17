@@ -463,7 +463,7 @@ body{
 }
 .card-content{
     position: relative;
-    background: linear-gradient(rgb(0, 0, 0),rgb(25, 25, 25));
+    background: linear-gradient(rgb(0, 0, 0),rgb(12, 12, 12));
     width: 560px;
     height: 100%;
     border-radius: 4px;
@@ -517,6 +517,7 @@ body{
     .card-content{
         width: 100%;
         align-items: center;
+        background: linear-gradient(rgb(0, 0, 0),rgb(12, 9, 9));
 
     }
 

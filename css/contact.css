@@ -142,6 +142,7 @@ h1{
     font-weight: 600;
     color: #ffffff;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -149,8 +150,7 @@ h1{
 
 
 
-/* CONTACT FORM
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+/* CONTACT FORM - MATERIALS AND THINGS THAT ARE BEING ADDED */
 :root {
   --white: #afafaf;
   --red: #e31b23;
@@ -224,8 +224,7 @@ body {
 }
 
 
-/* FORM ELEMENTS
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+/* FORM ELEMENTS */
 .my-form h1 {
   margin-bottom: 1.5rem;
 }
@@ -307,8 +306,7 @@ body {
 }
 
 
-/* FORM BTNS
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+/* FORM BTNS */
 .my-form .required-msg {
   display: none;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
@@ -350,8 +348,7 @@ body {
 }
 
 
-/* CUSTOM CHECKBOX
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+/* CUSTOM CHECKBOX */
 .my-form input[type="checkbox"] {
   position: absolute;
   left: -9999px;
@@ -393,8 +390,7 @@ body {
 }
 
 
-/* FOOTER
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+/* FOOTER */
 footer {
   font-size: 1rem;
   text-align: right;
@@ -411,8 +407,7 @@ footer span {
 }
 
 
-/* MQ
-â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+/* MQ */
 @media screen and (min-width: 600px) {
   .my-form .grid {
     display: grid;
