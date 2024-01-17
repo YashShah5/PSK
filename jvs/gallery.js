@@ -54,13 +54,13 @@ $(function(){
         });
 
         var galleryFull = new Swiper('.gallery-wrapper .content .gallery.full .swiper-container', {
-            speed: 900,
+            speed: 400,
             effect: 'slide',
             slidesPerView: 3,
             spaceBetween: 0,
             centeredSlides: true,
             autoplay: {
-                delay: 7000,
+                delay: 4000,
                 disableOnInteraction: false,
                 stopOnLastSlide: false
             },
@@ -93,5 +93,5 @@ $(function(){
 $(window).on("load", function() {
     setTimeout(function(){
         $('.loader').fadeOut();
-    }, 1000);
+    }, 1500);
 });
