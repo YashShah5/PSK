@@ -54,13 +54,13 @@ $(function(){
         });
 
         var galleryFull = new Swiper('.gallery-wrapper .content .gallery.full .swiper-container', {
-            speed: 400,
+            speed: 900,
             effect: 'slide',
             slidesPerView: 3,
             spaceBetween: 0,
             centeredSlides: true,
             autoplay: {
-                delay: 4000,
+                delay: 5000,
                 disableOnInteraction: false,
                 stopOnLastSlide: false
             },
