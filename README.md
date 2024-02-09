@@ -6,6 +6,7 @@ A home webpage for the Rutgers Phi Sigma Kappa organization
 
 ## Features
 
+- https://rupsk.org
 - Dark Mode Auto
 - Hyperlink Google Maps Integration
 - Contact Us page that connects with PSK Email
